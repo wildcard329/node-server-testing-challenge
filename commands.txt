@@ -1,0 +1,10 @@
+  499  git commit -m 'project endpoints are functional'
+  500  npm run server
+  501  mkdir api database anime
+  502  touch api/server.js anime/anime-model.js anime/anime-router.js
+  503  npm i knex sqlite3
+  504  npm i -g knex
+  505  knex init
+  506  knex migrate:make anime-table
+  507  knex migrate:latest
+  508  history | tail -10 >> commands.txt
