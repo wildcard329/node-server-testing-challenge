@@ -9,9 +9,9 @@ function find() {
     return db('anime');
 };
 
-function add(anime) {
+async function add(anime) {
     return db('anime')
-        .insert(anime)
+        .insert(anime, 'id')
 };
 
 function remove(id) {
